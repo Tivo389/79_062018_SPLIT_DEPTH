@@ -8,11 +8,54 @@
 .mainWrapper {
   align-items: center;
   display: flex;
-  flex-direction: column;
   height: 100vh;
   justify-content: center;
   width: 100vw;
 }
+
+.viewPort {
+  flex-basis: 65%;
+  position: relative;
+  line-height: 0;
+  &::before, &::after {
+    background-color: $colorWhite;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    width: 20px;
+  }
+  &::before {
+    left: 33.333333%;
+  }
+  &::after {
+    left: 66.666666%;
+  }
+}
+
+
+
+// START SCENE STYLES
+object[data="images/scene.svg"] {
+  width: 100%;
+}
+// END SCENE STYLES
+
+
+
+// START PLANE STYLES
+object[data="images/plane.svg"] {
+  width: 20%;
+  position: absolute;
+  bottom: 5.833333%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+// END PLANE STYLES
+
+
 
 // BOOTSTRAP NOTES & RESOLUTION REFERENCE
 // iPhone SE = 320 * 568px
