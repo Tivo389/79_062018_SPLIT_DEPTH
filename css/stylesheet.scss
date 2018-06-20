@@ -41,6 +41,13 @@
 object[data="images/scene.svg"] {
   width: 100%;
 }
+@keyframes clouds {
+  0% {transform: translate(-723x, -5px);}
+  100% {transform: translate(0px, -5px);}
+}
+.clouds {
+  animation: 60s linear infinite clouds;
+}
 // END SCENE STYLES
 
 

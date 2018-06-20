@@ -414,6 +414,26 @@ a {
 object[data="images/scene.svg"] {
   width: 100%; }
 
+@-webkit-keyframes clouds {
+  0% {
+    -webkit-transform: translate(-723x, -5px);
+    transform: translate(-723x, -5px); }
+  100% {
+    -webkit-transform: translate(0px, -5px);
+    transform: translate(0px, -5px); } }
+
+@keyframes clouds {
+  0% {
+    -webkit-transform: translate(-723x, -5px);
+    transform: translate(-723x, -5px); }
+  100% {
+    -webkit-transform: translate(0px, -5px);
+    transform: translate(0px, -5px); } }
+
+.clouds {
+  -webkit-animation: 60s linear infinite clouds;
+  animation: 60s linear infinite clouds; }
+
 object[data="images/plane.svg"] {
   width: 20%;
   position: absolute;
