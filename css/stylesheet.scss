@@ -43,7 +43,7 @@ object[data="images/scene.svg"] {
   width: 100%;
 }
 @keyframes clouds {
-  0% {transform: translate(-723x, -5px);}
+  0% {transform: translate(-723px, -5px);}
   100% {transform: translate(0px, -5px);}
 }
 .clouds {
@@ -62,9 +62,9 @@ object[data="images/scene.svg"] {
   100% {transform: rotate(130deg);}
 }
 @keyframes plane {
-  75% {
+  35% {
     transform:
-    translate(-50%, -18px)
+    translate(-50%, -85%)
     rotate(0)
     scale(2)
   ;}
