@@ -11,6 +11,7 @@
   height: 100vh;
   justify-content: center;
   width: 100vw;
+  overflow: hidden;
 }
 
 .viewPort {
@@ -53,13 +54,6 @@ object[data="images/scene.svg"] {
 
 
 // START PLANE STYLES
-object[data="images/plane.svg"] {
-  width: 20%;
-  position: absolute;
-  bottom: 5.833333%;
-  left: 50%;
-  transform: translateX(-50%);
-}
 @keyframes propeller {
   0% {transform: rotate(130deg);}
   25% {transform: rotate(140deg);}
@@ -67,9 +61,32 @@ object[data="images/plane.svg"] {
   75% {transform: rotate(140deg);}
   100% {transform: rotate(130deg);}
 }
+@keyframes plane {
+  75% {
+    transform:
+    translate(-50%, -18px)
+    rotate(0)
+    scale(2)
+  ;}
+  100% {
+    transform:
+    translate(-250vh, -500vh)
+    rotate(-65deg)
+    scale(125)
+  ;}
+}
+object[data="images/plane.svg"] {
+  animation: 8s infinite plane cubic-bezier(0.25, 0, 0.25, 0.25);
+  width: 15%;
+  position: absolute;
+  bottom: 5.833333%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
 .propeller {
   animation: 0.25s linear infinite propeller;
-  transform-origin: 62px 60px;
+  transform-origin: 62px 60px; // Got center coordinates from Sketch App.
 }
 // END PLANE STYLES
 
