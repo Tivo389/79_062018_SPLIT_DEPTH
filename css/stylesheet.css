@@ -389,7 +389,8 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 100vw; }
+  width: 100vw;
+  overflow: hidden; }
 
 .viewPort {
   -ms-flex-preferred-size: 65%;
@@ -434,14 +435,6 @@ object[data="images/scene.svg"] {
   -webkit-animation: 60s linear infinite clouds;
   animation: 60s linear infinite clouds; }
 
-object[data="images/plane.svg"] {
-  width: 20%;
-  position: absolute;
-  bottom: 5.833333%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%); }
-
 @-webkit-keyframes propeller {
   0% {
     -webkit-transform: rotate(130deg);
@@ -475,6 +468,33 @@ object[data="images/plane.svg"] {
   100% {
     -webkit-transform: rotate(130deg);
     transform: rotate(130deg); } }
+
+@-webkit-keyframes plane {
+  75% {
+    -webkit-transform: translate(-50%, -18px) rotate(0) scale(2);
+    transform: translate(-50%, -18px) rotate(0) scale(2); }
+  100% {
+    -webkit-transform: translate(-250vh, -500vh) rotate(-65deg) scale(125);
+    transform: translate(-250vh, -500vh) rotate(-65deg) scale(125); } }
+
+@keyframes plane {
+  75% {
+    -webkit-transform: translate(-50%, -18px) rotate(0) scale(2);
+    transform: translate(-50%, -18px) rotate(0) scale(2); }
+  100% {
+    -webkit-transform: translate(-250vh, -500vh) rotate(-65deg) scale(125);
+    transform: translate(-250vh, -500vh) rotate(-65deg) scale(125); } }
+
+object[data="images/plane.svg"] {
+  -webkit-animation: 8s infinite plane cubic-bezier(0.25, 0, 0.25, 0.25);
+  animation: 8s infinite plane cubic-bezier(0.25, 0, 0.25, 0.25);
+  width: 15%;
+  position: absolute;
+  bottom: 5.833333%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 1000; }
 
 .propeller {
   -webkit-animation: 0.25s linear infinite propeller;
