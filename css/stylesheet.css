@@ -441,3 +441,43 @@ object[data="images/plane.svg"] {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%); }
+
+@-webkit-keyframes propeller {
+  0% {
+    -webkit-transform: rotate(130deg);
+    transform: rotate(130deg); }
+  25% {
+    -webkit-transform: rotate(140deg);
+    transform: rotate(140deg); }
+  50% {
+    -webkit-transform: rotate(130deg);
+    transform: rotate(130deg); }
+  75% {
+    -webkit-transform: rotate(140deg);
+    transform: rotate(140deg); }
+  100% {
+    -webkit-transform: rotate(130deg);
+    transform: rotate(130deg); } }
+
+@keyframes propeller {
+  0% {
+    -webkit-transform: rotate(130deg);
+    transform: rotate(130deg); }
+  25% {
+    -webkit-transform: rotate(140deg);
+    transform: rotate(140deg); }
+  50% {
+    -webkit-transform: rotate(130deg);
+    transform: rotate(130deg); }
+  75% {
+    -webkit-transform: rotate(140deg);
+    transform: rotate(140deg); }
+  100% {
+    -webkit-transform: rotate(130deg);
+    transform: rotate(130deg); } }
+
+.propeller {
+  -webkit-animation: 0.25s linear infinite propeller;
+  animation: 0.25s linear infinite propeller;
+  -webkit-transform-origin: 62px 60px;
+  transform-origin: 62px 60px; }
