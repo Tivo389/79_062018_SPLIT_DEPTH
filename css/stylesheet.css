@@ -417,16 +417,16 @@ object[data="images/scene.svg"] {
 
 @-webkit-keyframes clouds {
   0% {
-    -webkit-transform: translate(-723x, -5px);
-    transform: translate(-723x, -5px); }
+    -webkit-transform: translate(-723px, -5px);
+    transform: translate(-723px, -5px); }
   100% {
     -webkit-transform: translate(0px, -5px);
     transform: translate(0px, -5px); } }
 
 @keyframes clouds {
   0% {
-    -webkit-transform: translate(-723x, -5px);
-    transform: translate(-723x, -5px); }
+    -webkit-transform: translate(-723px, -5px);
+    transform: translate(-723px, -5px); }
   100% {
     -webkit-transform: translate(0px, -5px);
     transform: translate(0px, -5px); } }
@@ -470,17 +470,17 @@ object[data="images/scene.svg"] {
     transform: rotate(130deg); } }
 
 @-webkit-keyframes plane {
-  75% {
-    -webkit-transform: translate(-50%, -18px) rotate(0) scale(2);
-    transform: translate(-50%, -18px) rotate(0) scale(2); }
+  35% {
+    -webkit-transform: translate(-50%, -85%) rotate(0) scale(2);
+    transform: translate(-50%, -85%) rotate(0) scale(2); }
   100% {
     -webkit-transform: translate(-250vh, -500vh) rotate(-65deg) scale(125);
     transform: translate(-250vh, -500vh) rotate(-65deg) scale(125); } }
 
 @keyframes plane {
-  75% {
-    -webkit-transform: translate(-50%, -18px) rotate(0) scale(2);
-    transform: translate(-50%, -18px) rotate(0) scale(2); }
+  35% {
+    -webkit-transform: translate(-50%, -85%) rotate(0) scale(2);
+    transform: translate(-50%, -85%) rotate(0) scale(2); }
   100% {
     -webkit-transform: translate(-250vh, -500vh) rotate(-65deg) scale(125);
     transform: translate(-250vh, -500vh) rotate(-65deg) scale(125); } }
